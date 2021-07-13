@@ -1,5 +1,7 @@
 test_cases = int(input(""))
-sum = {}
+sums = []
 for i in range(test_cases):
-    add = input("")
-    sum[add.split()[0]] = add.split()[1]
+    add_input = input("")
+    sums.append((int(add_input.split()[0]) + int(add_input.split()[1])))
+for i in sums:
+    print(i)
